@@ -1,0 +1,10 @@
+/* pages/todo/todo.wxss */
+.list-style{
+  border-bottom: 1px solid #eee;
+  padding:10px 0;
+  word-break: break-all;
+}
+.line{
+  text-decoration:line-through;
+}
+

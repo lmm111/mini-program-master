@@ -1,0 +1,9 @@
+<!--pages/mate/mate.wxml-->
+<!-- <image src="../../assets/bg.jpg" class="bg" ></image> -->
+<view>
+  <view class="cire cire{{index}}" wx:for="{{cireList}}" wx:key="index" style="top:{{item.top}};left:{{item.left}};" bindtap="getFunc" data-id="{{index}}" data-time="{{item.time}}">
+    <text wx:if="{{item.time==0}}">可领取</text>
+    <text wx:else>{{item.time}}s</text>
+    <text class="cire-txt" wx:if="{{item.time != 0}}">采集中...</text>
+  </view>
+</view>

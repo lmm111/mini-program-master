@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/mate/mate",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/todo/todo",
+    "pages/test/test"  
+  ],
+  "useExtendedLib": {
+    "weui": true
+  },
+  "tabBar": {
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "color": "#333",
+    "selectedColor": "#fd3d56",
+    "list": [
+      {
+        "pagePath": "pages/mate/mate",
+        "text": "游戏",
+        "iconPath": "assets/icon/mate.png",
+        "selectedIconPath": "assets/icon/mate1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "天气",
+        "iconPath": "assets/icon/tianqi.png",
+        "selectedIconPath": "assets/icon/tianqi1.png"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "text": "任务",
+        "iconPath": "assets/icon/todo.png",
+        "selectedIconPath": "assets/icon/todo1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "更多",
+        "iconPath": "assets/icon/more.png",
+        "selectedIconPath": "assets/icon/more1.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fd3d56",
+    "navigationBarTitleText": "日常精选小工具",
+    "navigationBarTextStyle": "white"
+  },
+  "debug": false,
+  "navigateToMiniProgramAppIdList": [
+    "wxaf35009675aa0b2a",
+    "wx91d27dbf599dff74",
+    "wxb11f14b08a38ba44"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

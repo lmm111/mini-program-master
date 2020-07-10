@@ -1,0 +1,20 @@
+<!--pages/todo/todo.wxml-->
+<view data-weui-theme="dark">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input" style="display:block;">
+        <input class="weui-input" auto-focus placeholder="输入您的任务" value="{{intupbase}}" bindinput='oninput'/>
+      </view>
+    </view>
+    <!-- bindtap绑定点击事件 -->
+    <button type="primary" bindtap='onclick' style="margin-top:10px;width:90%">添加</button>
+  <!-- 遍历数组，用法和vue类似 -->
+  <view style="padding:15px;">
+    <view class="list-style" wx:for='{{list}}' wx:key='index'>
+    <text class="{{item.isdone ? 'line' : ''}}">{{index+1}}.{{item.txt}}</text>
+    <view>
+      <button wx:if="{{!item.isdone}}" style="margin-right:5px;" data-id="{{index}}" size="mini" type="default" bindtap='onsuccess'>完成</button>
+      <button data-id="{{index}}" size="mini" type="warn" bindtap='ondel'>删除</button>
+    </view>
+    </view>
+  </view>
+</view>

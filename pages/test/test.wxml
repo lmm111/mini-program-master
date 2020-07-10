@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<view>
+  <text>测试传递参数id：{{test}}</text>
+</view>
